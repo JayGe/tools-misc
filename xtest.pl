@@ -1,5 +1,5 @@
 #!/usr/bin/perl
-# Small X11 script and wrapper for a coupld of things
+# X11 script and wrapper for doing some bits and bobs
 # JayGe
 
 use X11::Protocol;
@@ -69,13 +69,13 @@ elsif ($opt_f) # Focus the window
 
 else
 {
-	print("xtest.pl 0.1 usage:\n\n");
+	print("xtest.pl 0.2 usage:\n\n");
 	print("  -d <displayname> Uses \$DISPLAY or :0.0 if none specified\n");
 	print("  -k <windowid> In hex to kill\n");
-	print("  -l List Windows\n");
+	print("  -l List windows\n");
 	print("  -f <windowid> In hex to focus input on\n");
-	print("  -i Server Information\n");
-	print("  -m Move Pointer\n");
+	print("  -i Server information\n");
+	print("  -m Move the mouse pointer\n");
 	print("  -s <tofilename> Take Screencapture using xwd\n");
 	exit(0);
 }
